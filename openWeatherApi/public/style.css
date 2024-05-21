@@ -1,0 +1,69 @@
+html {
+    font-size: 16px; /* Set base font size for rem calculations */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* 0 8px 16px */
+    text-align: center;
+    width: 18.75rem; /* 300px */
+}
+
+.header {
+    font-size: 2rem; /* 32px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBTN {
+    width: 100%;
+    padding: 0.625rem; /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    font-size: 1rem; /* 16px */
+}
+
+.SubmitBTN {
+    width: 100%;
+    padding: 0.625rem; /* 10px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #2575fc;
+    color: #fff;
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.SubmitBTN:hover {
+    background-color: #1a54b3;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 1.25rem; /* 20px */
+}
+
+p {
+    font-size: 1.2rem; /* 19.2px */
+}

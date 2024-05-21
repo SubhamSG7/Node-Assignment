@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Weather Api using openWeather</h1>
+        <form action="/weatherapi" method="post">
+            <input type="text" name="city" placeholder="Enter city name" required class="inputBTN">
+            <button type="submit" class="SubmitBTN">Get Weather</button>
+        </form>
+        <% if (weather) { %>
+            <p>The weather in <%= weather.name %> is <%= weather.main.temp %> degrees Celsius.</p>
+        <% } %>
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+    </div>
+</body>
+</html>
