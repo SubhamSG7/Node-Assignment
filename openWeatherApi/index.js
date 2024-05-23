@@ -3,8 +3,8 @@ const app = express();
 const request = require('request');
 const bodyParser = require('body-parser');
 const port = 3030;
-
-const apiKey = "a16819bd1ea18d9baae74837fa6544b3";
+require('dotenv').config()
+const apiKey = process.env.apiKey
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
